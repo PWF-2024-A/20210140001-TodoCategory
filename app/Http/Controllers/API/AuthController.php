@@ -37,7 +37,7 @@ if (auth()->attempt($credentials)) {
 }
 
 }
-public function logout (Request $request)
+public function logout(Request $request)
 {
     $request->user()->tokens()->delete();
 
